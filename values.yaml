@@ -882,9 +882,9 @@ jenkins:
           Maven:
             Image: jenkinsxio/builder-maven:0.1.131
             Privileged: true
-            RequestCpu: "400m"
+            RequestCpu: "100m"
             RequestMemory: "512Mi"
-            LimitCpu: "1"
+            LimitCpu: "500m"
             LimitMemory: "1024Mi"
             # You may want to change this to true while testing a new image
             # AlwaysPullImage: true
@@ -935,9 +935,9 @@ jenkins:
           Maven-Java11:
             Image: jenkinsxio/builder-maven-java11:0.1.131
             Privileged: true
-            RequestCpu: "400m"
+            RequestCpu: "100m"
             RequestMemory: "512Mi"
-            LimitCpu: "1"
+            LimitCpu: "500m"
             LimitMemory: "1024Mi"
             # You may want to change this to true while testing a new image
             # AlwaysPullImage: true
